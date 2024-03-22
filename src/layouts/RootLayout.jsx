@@ -2,7 +2,7 @@ import { Outlet, NavLink, ScrollRestoration, Link } from "react-router-dom"
 
 export default function RootLayout() {
     return (
-      <section className="font-montserrat bg-graybg">
+      <section className="font-montserrat bg-graybg flex flex-col justify-between min-h-[100vh]">
         <ScrollRestoration />
         <header>
           <nav className="h-16 flex items-center max-md:ml-0 max-2xl:ml-20 max-md:flex max-md:justify-center max-container">
