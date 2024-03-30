@@ -1,10 +1,12 @@
 import { useParams } from "react-router-dom";
 import { products } from "../constants";
+import { Helmet } from "react-helmet";
 import NotFound from './NotFound';
 
 const Description = () => {
-  const { productId } = useParams();
-  const product = products.find(product => product.id === parseInt(productId));
+  const { productName } = useParams();
+
+  const product = products.find(product => product.slug === productName);
 
   if (!product) {
     return <NotFound />;
@@ -12,6 +14,11 @@ const Description = () => {
 
   return (
     <section className="flex gap-20 items-center max-lg:flex-col">
+      <Helmet>
+        <title>{product.name}</title>
+        <meta name="description" content={product.seo} />
+        
+      </Helmet>
       <div className="md:w-[300px] min-w-[300px]">
         <div className="bg-secondary h-16 text-white flex items-center">
           <h3 className="text-xl font-bold ml-4">{product.name}</h3>
@@ -22,5 +29,4 @@ const Description = () => {
     </section>
   );
 }
-
 export default Description;
