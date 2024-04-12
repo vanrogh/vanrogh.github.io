@@ -6,7 +6,7 @@ export default function RootLayout() {
         <ScrollRestoration />
         <header>
           <nav className="h-16 flex items-center max-md:ml-0 max-2xl:ml-20 max-md:flex max-md:justify-center max-container">
-            <NavLink className="text-primary text-[24px] font-bold max-md:text-[18px]" to="/">Gulnara Yertuganova</NavLink>
+            <NavLink className="text-primary text-[24px] font-bold max-md:text-[18px]" to="/">Dandelion #3814</NavLink>
           </nav>
         </header>
         

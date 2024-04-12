@@ -1,8 +1,12 @@
-import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Use = () => {
   return (
     <section>
+      <Helmet>
+        <title>Gulnara Yertuganova</title>
+        <meta name="description" content="Как принимать H2 Premium Магний водород, Artroline 5 Power, AW Line, DiabeLine, HappyLine, GepoLine" />
+      </Helmet>
       <div className='mb-4'>
         <h2 className='mb-4 font-bold'><span className='text-red-500 font-bold text-2xl'>⁉️</span> Как принимать</h2>
         <h2 className='font-bold'>✔️ H2 Premium (Магний-Водород)</h2>
